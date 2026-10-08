@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is guided agency? | Nediyana Daskalova</title>
+<meta name="description" content="Guided agency is a way of designing systems that do hard work for people. The system gives guidance, and the person keeps the choices they care about.">
+<link rel="canonical" href="https://nediyana.com/essays/guided-agency/">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nediyana.com/essays/guided-agency/">
+<meta property="og:title" content="What is guided agency?">
+<meta property="og:description" content="Guided agency is a way of designing systems that do hard work for people. The system gives guidance, and the person keeps the choices they care about.">
+<meta property="og:image" content="https://nediyana.github.io/nediyana.jpg">
+<meta property="article:published_time" content="2026-10-07">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What is guided agency?">
+<meta name="twitter:description" content="Guided agency is a way of designing systems that do hard work for people. The system gives guidance, and the person keeps the choices they care about.">
+<meta name="twitter:image" content="https://nediyana.github.io/nediyana.jpg">
+<meta name="theme-color" content="#fbfaf7">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What is guided agency?",
+  "description": "Guided agency is a way of designing systems that do hard work for people. The system gives guidance, and the person keeps the choices they care about.",
+  "datePublished": "2026-10-07",
+  "url": "https://nediyana.com/essays/guided-agency/",
+  "author": {
+    "@type": "Person",
+    "name": "Nediyana Daskalova",
+    "url": "https://nediyana.com/"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body class="essay-page">
+<div class="wrap">
+  <p class="back"><a href="../../">← Nediyana Daskalova</a></p>
+
+  <main>
+    <article>
+      <header class="essay-head">
+        <h1>What is guided agency?</h1>
+        <p class="facts"><time datetime="2026-10-07">October 7, 2026</time> · Nediyana Daskalova</p>
+      </header>
+
+      <div class="essay-body">
+        <p>Guided agency is a way of designing systems that do hard work for people. The system gives guidance, and the person keeps the choices they care about. I named it during my PhD at Brown, and I have used it in every product I've worked on since.</p>
+
+        <h2>Where it came from</h2>
+        <p>I started with sleep. During my PhD I built apps that ran experiments for people to find out what helped them sleep better. The first one picked the experiment for you and asked you to follow it for three weeks. It was rigorous, and people got tracking fatigue and lost interest before they learned anything.</p>
+        <p>For the next app, SleepBandits, we wrote down four design principles. Guided agency was the first. In the paper we described it as the need to give people the flexibility to pick their own experiment and how long to run it, while nudging their choices toward best practices. The other three were scientific rigor, tolerance, and comprehensibility. All four were about the tension between scientific rigor and the demands of everyday life.</p>
+
+        <h2>What it looks like in a product</h2>
+        <p>SleepBandits had 26 experiments, which is too many for someone new. So sleep experts picked six for a first try, and you could see the rest and switch at any time.</p>
+        <p>We set defaults the same way and let people change them. Our default measure was time to fall asleep, and more people chose how rested they felt in the morning. We also found that people asked for 4 nights were almost three times more likely to reach a result than people asked for 10.</p>
+        <p>In each case the app made a recommendation and the person could overrule it.</p>
+
+        <h2>Why choice is not enough</h2>
+        <p>The next app, Self-E, showed me that choice on its own was not enough.</p>
+        <p>People came in with preconceived notions about what was good for them. One participant set up an experiment on sugar, and on some days the app asked her to eat a cookie so it could compare. She refused. “I'm not going to intentionally do something bad for me,” she told us. When results contradicted what people believed, they found reasons not to trust them.</p>
+        <p>So the guidance also has to earn trust. In the paper we called this the need for empathy. The app should acknowledge what the person already believes before it asks them to test it.</p>
+        <p>People did not want full control either. As one participant said, “I don't fully trust myself to design a rigorous self-experiment.”</p>
+
+        <h2>Why it matters for AI products</h2>
+        <p>I wrote these principles for sleep apps, and the same tension shows up in any product where AI does work for a person.</p>
+        <p>In the sleep apps it was between scientific rigor and everyday life. In AI products it is between what the system can do on its own and what the person wants a say in.</p>
+        <p>If the system does everything, the result is fast and often good, and it does not feel like yours. If the person has to control everything, it is too much work.</p>
+        <p>The four principles carry over with small changes. Guide people toward a good starting point and let them change it. Keep the system honest about what it knows. Tolerate how people really behave, which is rarely how you planned. Show results in a way people can understand and question.</p>
+
+        <h2>Questions I ask</h2>
+        <p>When I look at a product that does work for people, I ask these.</p>
+        <ul>
+          <li>What is the system deciding for the person, and do they know?</li>
+          <li>Which choices does this person care about making themselves?</li>
+          <li>What is the default, and how easy is it to change?</li>
+          <li>If the person ignores the guidance, does the product still work for them?</li>
+          <li>Can they understand the result well enough to trust it or push back?</li>
+        </ul>
+        <p>If I can't answer one of them, that is usually where the product is losing people.</p>
+
+        <h2>The papers</h2>
+        <ul>
+          <li><a href="https://jeffhuang.com/papers/SleepBandits_CHI20.pdf">SleepBandits: Guided Flexible Self-Experiments for Sleep</a> (CHI 2020), where the four principles are defined</li>
+          <li><a href="https://nediyana.github.io/pdfs/Self_E__CHI_2021.pdf">Self-E: Smartphone-Supported Guidance for Customizable Self-Experimentation</a> (CHI 2021), on trust, preconceived notions, and empathy</li>
+          <li><a href="http://jeffhuang.com/Final_SleepCoacher_UIST16.pdf">SleepCoacher</a> (UIST 2016), the first and strictest version</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Nediyana Daskalova</p>
+  </footer>
+</div>
+</body>
+</html>
