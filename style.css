@@ -131,10 +131,6 @@ p { margin: 0 0 1.15em; }
 strong, b { font-weight: 600; }
 p:last-child { margin-bottom: 0; }
 
-.question {
-  font-style: italic;
-}
-
 /* Papers */
 .papers {
   list-style: none;
