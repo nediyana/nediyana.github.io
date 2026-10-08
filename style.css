@@ -87,7 +87,9 @@ header { margin-bottom: clamp(3.5rem, 9vw, 5.5rem); }
 
 h1 {
   font-family: var(--display);
-  font-size: clamp(2.6rem, 8vw, 4.75rem);
+  /* Sized so the full name always fits on one line (it is about 9em wide) */
+  font-size: min(4.5rem, calc((100vw - 3rem) / 9));
+  white-space: nowrap;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.025em;
@@ -181,6 +183,7 @@ footer p { margin: 0; }
     column-gap: clamp(3rem, 6vw, 6rem);
   }
   header > *, section > *, footer > * { grid-column: 2; }
+  header > h1 { font-size: min(4.5rem, calc(min(40rem, min(100vw, 62rem) - 14rem - clamp(3rem, 6vw, 6rem)) / 9)); }
   section > h2 { grid-column: 1; grid-row: 1 / span 20; margin: 0.35rem 0 0; }
   header > .portrait {
     grid-column: 1;
@@ -201,6 +204,7 @@ footer p { margin: 0; }
 .essay-head h1 {
   font-family: var(--display);
   font-size: clamp(2rem, 6vw, 3rem);
+  white-space: normal;
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: -0.015em;
