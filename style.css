@@ -217,11 +217,31 @@ footer p { margin: 0; }
 .essay-body li::marker { color: var(--muted); }
 
 @media (min-width: 52rem) {
-  .essay-page .back, .essay-head, .essay-body, .essay-page footer {
+  /* Same two columns as the home page: labels on the left, text on the right */
+  .essay-page { --col: calc(11rem + clamp(3rem, 6vw, 6rem)); }
+  .essay-page .essay-head { display: block; }
+  .essay-page main, .essay-page footer {
     display: block;
-    margin-left: calc(11rem + clamp(3rem, 6vw, 6rem));
+    margin-left: var(--col);
     max-width: 40rem;
   }
+  .essay-page .back {
+    float: left;
+    width: 11rem;
+    margin: 0.9rem 0 0;
+  }
+  .essay-body h2 {
+    float: left;
+    clear: left;
+    width: 11rem;
+    margin: 0.3rem 0 0 calc(-1 * var(--col));
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .essay-body h2 + * { margin-top: 0; }
+  .essay-body p:has(+ h2), .essay-body ul:has(+ h2) { margin-bottom: 2.75rem; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
